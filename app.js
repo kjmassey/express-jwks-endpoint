@@ -3,7 +3,9 @@ const fs = require('fs');
 const { importSPKI, exportJWK } = require('jose');
 
 const app = express();
-const PORT = 3000;
+
+// Use the PORT environment variable provided by Heroku, or default to a local port (e.g., 3000)
+const PORT = process.env.PORT || 3000;
 
 // 1. Load the public key from a PEM file
 // (Assuming you have a 'public.pem' file in a 'keys' directory)
