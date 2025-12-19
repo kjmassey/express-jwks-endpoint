@@ -43,6 +43,6 @@ app.get('/.well-known/jwks.json', (req, res) => {
 // Start the server after initializing the key
 initializeKey().then(() => {
   app.listen(PORT, () => {
-    console.log(`JWKS endpoint listening at http://localhost:${PORT}/.well-known/jwks.json`);
+    console.log(`JWKS endpoint listening at .../.well-known/jwks.json on port ${PORT}`);
   });
 });
