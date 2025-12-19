@@ -20,7 +20,8 @@ async function initializeKey() {
     publicJwk = await exportJWK(keyLike);
     
     // Optional: Add a Key ID (kid) to help clients select the correct key
-    publicJwk.kid = 'kylekylekyle'; 
+    publicJwk.kid = 'YOUR-KEY-ID'; // Replace with your actual key ID
+    
     console.log('Public key converted to JWK format successfully.');
 
   } catch (error) {
